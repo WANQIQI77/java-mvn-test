@@ -33,8 +33,8 @@ public class Compute {
 		Compute operations = new Compute();
 		
 		System.err.println("2 to the power of 8: " + operations.power(2, 8));
-		System.out.println("Square root of 64: " + operations.squareRoot(64));
-		System.out.println("Cube root of 27: " + operations.cubeRoot(27));
-		System.out.println("Natural logarithm of e: " + operations.naturalLogarithm(Math.E));
+		System.err.println("Square root of 64: " + operations.squareRoot(64));
+		System.err.println("Cube root of 27: " + operations.cubeRoot(27));
+		System.err.println("Natural logarithm of e: " + operations.naturalLogarithm(Math.E));
 	}
 }

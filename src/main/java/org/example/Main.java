@@ -1,8 +1,13 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
+  // 创建一个Logger实例
+  private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+  
   public static void main(String[] args) {
     int[] numbers = { 9, 3, 1, 5, 13, 12 };
     
@@ -10,6 +15,7 @@ public class Main {
     Arrays.sort(numbers);
     
     // 输出排序后的数组
-    System.err.println(Arrays.toString(numbers));
+    // 替代System.err.println的用法
+    LOGGER.log(Level.INFO, Arrays.toString(numbers));
   }
 }
